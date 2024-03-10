@@ -9,7 +9,6 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import pageObject.CarInsurancePage;
 import pageObject.HealthInsurancePage;
 import pageObject.TravelPlanPage;
 
@@ -45,13 +44,6 @@ public class ExcelUtility {
 
 		}
 		
-//		XSSFSheet sheet0=workbook.createSheet("Car Quote");
-//		XSSFRow row0=sheet0.createRow(0);
-//		XSSFCell cell0=row0.createCell(0);
-//		cell0.setCellValue("Car Quotation ");
-//		XSSFRow r1=sheet0.createRow(1);
-//		r1.createCell(0).setCellValue(CarInsurancePage.getQuote);
-		
 		
 		XSSFSheet sheet1=workbook.createSheet("All Health Insurance List");
 		XSSFRow nrow=sheet1.createRow(0);
@@ -63,6 +55,8 @@ public class ExcelUtility {
 			ro.createCell(0).setCellValue(HealthInsurancePage.allHealthList.get(i-1));
 			
 		}
+		
+		
 		workbook.write(file);
 		workbook.close();
 		file.close();

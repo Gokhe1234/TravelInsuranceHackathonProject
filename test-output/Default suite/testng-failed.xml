@@ -8,11 +8,11 @@
           <include name="quotationData"/>
           <include name="openUrl"/>
           <include name="allHealthInsurance"/>
-          <include name="closeBowser"/>
           <include name="travelDetails"/>
-          <include name="HealthInsurancePlan"/>
+          <include name="closeBowser"/>
           <include name="CarInsurenceDetails"/>
           <include name="dataSort"/>
+          <include name="HealthInsurancePlan"/>
           <include name="StudentPlanDetails"/>
           <include name="errorMessageValidate"/>
           <include name="validatTravelInsunce"/>

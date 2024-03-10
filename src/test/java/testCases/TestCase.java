@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObject.CarInsurancePage;
@@ -42,6 +43,7 @@ public static String path;
 		logger.info("clicked on continue..");
 		tip.getSearchClick();
 		tip.getNextbutton2();
+	  	path=ScreenShots.screenShots(driver, "Travel Detail");
 		logger.info("**** ending TravelDetails  *****");
 	}
 	
@@ -52,6 +54,9 @@ public static String path;
 		tip.studentSelect();
 		logger.info("Select Student...");
 		tip.getSelectAgeOption1();
+		String age="22 years";
+		String actualAge=tip.allAgeOptions1.getText();
+		Assert.assertEquals(age, actualAge);
 		tip.getAgeOptions1();
 		tip.getSelectAgeOption2();
 		tip.getAgeOption2();
@@ -63,6 +68,7 @@ public static String path;
 		tip.MobileNo(ExcelUtility.readExcel(0));
 		tip.viewPlan();
 		path=ScreenShots.screenShots(driver, "View Plans");
+
 		logger.info("**** Ending Student Data Verify  *****");
 		
 	}
@@ -97,7 +103,7 @@ public static String path;
 	@Test(priority=6)
 	public void CarInsurenceDetails() throws Exception {
 		
-		logger.info("**** starting Car Insurence Details  *****");
+		logger.info("**** starting Car Insurance Details  *****");
 		CarInsurancePage cip=new CarInsurancePage(driver);
 		cip.carInsurance();
 		logger.info("Open of Car Insurance Page ");
@@ -110,8 +116,8 @@ public static String path;
 		cip.fuelTypeOption();
 		cip.carVariantOption();
 		cip.carVariantMode();
-		logger.info("Filled all car Datail ");
-		logger.info("**** Ending Car Insurence Details  *****");
+		logger.info("Filled all car Detail ");
+		logger.info("**** Ending Car Insurance Details  *****");
 		
 	}
 		
@@ -122,8 +128,15 @@ public static String path;
         cip.getName(ExcelUtility.readExcel(1));
 		cip.getEmail(ExcelUtility.readExcel(2));
 		cip.getMobilNo("9806771209");
+		try{
+			Assert.assertEquals(cip.errorMessage.getText(), "Please enter a valid e-mail ID.");
+		}
+		catch(Exception e) {
+			Assert.assertEquals(cip.updatederrorMessage.getText(), "Enter a valid email id");
+		}
 		cip.getErrorMessage();
-		path=ScreenShots.screenShots(driver, "Error Message");
+        path=ScreenShots.screenShots(driver, "Error Message");
+		
 		logger.info("Capture Message.. ");
 		logger.info("**** Ending Error Message Validate  *****");
 		
@@ -131,28 +144,16 @@ public static String path;
 	
 	@Test(priority=8)
 	public void correctDatailValidation() throws Exception {
-		logger.info("**** starting Correct Datail Validation  *****");
+		logger.info("**** starting Correct Detail Validation  *****");
 		CarInsurancePage cip=new CarInsurancePage(driver);
 		cip.clearEmail();
 		cip.correctEmail(ExcelUtility.readExcel(3));
 		path=ScreenShots.screenShots(driver, "positive test cases");
-		cip.viewButton();
-		logger.info("**** Ending Correct Datail Validation  *****");
-	}
-	
-	@Test(priority=9)
-	public void quotationData() throws InterruptedException {
-		logger.info("**** starting quotation Data  *****");
-		CarInsurancePage cip=new CarInsurancePage(driver);
-		cip.getDeliveryDate();
-		cip.getCarNo();
-		cip.view();
-		cip.getQuote();
 		cip.logoClickBack();
-		logger.info("**** Ending Quotation Data  *****");
+		logger.info("**** Ending Correct Detail Validation  *****");
 	}
 
-	@Test(priority=10)
+	@Test(priority=9)
 	public void HealthInsurancePlan() throws Exception {
 		logger.info("**** starting Health Insurance Plan  *****");
 		HealthInsurancePage hip=new HealthInsurancePage(driver);
@@ -172,7 +173,7 @@ public static String path;
 		logger.info("**** Ending Health Insurance Plan  *****");
 	}
 	
-	@Test(priority=11)
+	@Test(priority=10)
 	public void allHealthInsurance() throws InterruptedException, Exception
 	
 	{
@@ -181,6 +182,8 @@ public static String path;
 		hip.allHealthInSu();
 		path=ScreenShots.screenShots(driver, "Health Insurance package");
 		logger.info("**** Ending All Health Insurance  *****");
+		
+		ExcelUtility.excel();
 	}
 			
 

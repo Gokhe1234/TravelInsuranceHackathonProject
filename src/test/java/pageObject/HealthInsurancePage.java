@@ -9,8 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import utilities.ExcelUtility;
-
 public class HealthInsurancePage extends BasePage{
 	
 	JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -72,7 +70,8 @@ public class HealthInsurancePage extends BasePage{
 	}
 	
 	public void getContinueBtn() {
-		continueBtn.click();
+		//continueBtn.click();
+		js.executeScript("arguments[0].click();", continueBtn);
 	}
 	
 	public void getAge() {
@@ -146,7 +145,7 @@ public class HealthInsurancePage extends BasePage{
 			
 			System.out.println(allHealthList.get(k));
 		}
-		ExcelUtility.excel();
+		
 		
 		
 		

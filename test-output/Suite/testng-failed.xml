@@ -10,11 +10,9 @@
     <classes>
       <class name="testCases.TestCase">
         <methods>
-          <include name="quotationData"/>
           <include name="openUrl"/>
           <include name="closeBowser"/>
-          <include name="allHealthInsurance"/>
-          <include name="HealthInsurancePlan"/>
+          <include name="errorMessageValidate"/>
         </methods>
       </class> <!-- testCases.TestCase -->
     </classes>

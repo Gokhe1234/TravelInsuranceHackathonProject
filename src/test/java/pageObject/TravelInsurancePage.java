@@ -45,7 +45,7 @@ public class TravelInsurancePage extends BasePage {
 	WebElement selectAgeOption1;
 	
 	@FindBy(xpath="//label[text()='22 years']")
-	WebElement allAgeOptions1;
+	public WebElement allAgeOptions1;
 	
 	@FindBy(xpath="//div[text()='Select age of traveller 2']")
 	WebElement selectAgeOption2;
@@ -83,13 +83,14 @@ public class TravelInsurancePage extends BasePage {
 	}
 	
 	public void getSubmeetbutton() {
-		submeetbutton.click();
+		js.executeScript("arguments[0].click();", submeetbutton);
+		
 	}
 	
 	public void getSearchClick() {
 		searchClick.click();
-		String startdate="20";
-		String month_year="March 2024";
+		String startdate="21";
+		String month_year="April 2024";
 		
 		while(true) {
 			String month=month1.getText();
@@ -112,7 +113,7 @@ public class TravelInsurancePage extends BasePage {
 		}
 		
 		String enddate="10";
-		String month_year1="April 2024";
+		String month_year1="May 2024";
 		
 		
 		while(true) {

@@ -20,7 +20,7 @@ public class ExtentReportManager implements ITestListener{
 	//creating test case entries in the report and update status of the test methods
 	public ExtentTest test;
 	public void onStart(ITestContext context) {
-		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/myReport.html");
+		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/TestNgReport.html");
 		sparkReporter.config().setDocumentTitle("Travel Insurance Plan for Students Automation Report");
 		sparkReporter.config().setReportName("Travel Insurance Plan for Students Automation Testing");
 		sparkReporter.config().setTheme(Theme.STANDARD);

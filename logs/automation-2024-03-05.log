@@ -1,0 +1,60 @@
+19:56:18.497 [main] INFO  testCases.TestCase - **** starting Student Plan Detail  *****
+19:56:18.978 [main] INFO  testCases.TestCase - All student first 3 plan..
+19:56:20.695 [main] INFO  testCases.TestCase - **** Ending Student Plan Detail *****
+19:56:20.705 [main] INFO  testCases.TestCase - **** starting Car Insurance Details  *****
+19:56:21.043 [main] INFO  testCases.TestCase - Open of Car Insurance Page 
+19:56:28.517 [main] INFO  testCases.TestCase - Filled all car Detail 
+19:56:28.518 [main] INFO  testCases.TestCase - **** Ending Car Insurance Details  *****
+19:56:28.523 [main] INFO  testCases.TestCase - **** starting Error Message Validate  *****
+19:56:30.068 [main] INFO  testCases.TestCase - Capture Message.. 
+19:56:30.069 [main] INFO  testCases.TestCase - **** Ending Error Message Validate  *****
+19:56:30.073 [main] INFO  testCases.TestCase - **** starting Correct Detail Validation  *****
+19:56:34.504 [main] INFO  testCases.TestCase - **** Ending Correct Detail Validation  *****
+19:56:34.510 [main] INFO  testCases.TestCase - **** starting Health Insurance Plan  *****
+19:56:46.588 [main] INFO  testCases.TestCase - **** Ending Health Insurance Plan  *****
+19:56:46.591 [main] INFO  testCases.TestCase - **** starting All Health Insurance  *****
+19:57:05.546 [main] INFO  testCases.TestCase - **** Ending All Health Insurance  *****
+15:07:01.972 [main] INFO  testCases.TestCase - Chrome browser opened successfully
+15:07:35.979 [main] INFO  testCases.TestCase - **** starting validatTravelInsuncePage  *****
+15:07:36.809 [main] INFO  testCases.TestCase - **** Ending validatTravelInsuncePage  *****
+15:07:36.856 [main] INFO  testCases.TestCase - **** Starting TravelDetails  *****
+15:07:36.857 [main] INFO  testCases.TestCase - Opening of Travel Insurance Page 
+15:08:19.060 [main] INFO  testCases.TestCase - Entering customer details.. 
+15:08:19.749 [main] INFO  testCases.TestCase - clicked on continue..
+15:08:22.844 [main] INFO  testCases.TestCase - **** ending TravelDetails  *****
+15:08:22.849 [main] INFO  testCases.TestCase - **** Starting Student Data Verify  *****
+15:08:23.048 [main] INFO  testCases.TestCase - Select Student...
+15:08:24.132 [main] INFO  testCases.TestCase - clicked on continue..
+15:08:24.811 [main] INFO  testCases.TestCase - Medical Condition..
+15:08:27.024 [main] INFO  testCases.TestCase - **** Ending Student Data Verify  *****
+15:08:27.029 [main] INFO  testCases.TestCase - **** starting Data Sort  *****
+15:08:33.400 [main] INFO  testCases.TestCase - Entering Student details.. 
+15:08:37.926 [main] INFO  testCases.TestCase - clicked on continue..
+15:08:40.571 [main] INFO  testCases.TestCase - **** Ending Data Sort  *****
+15:08:40.578 [main] INFO  testCases.TestCase - **** starting Student Plan Detail  *****
+15:08:40.974 [main] INFO  testCases.TestCase - All student first 3 plan..
+15:09:11.647 [main] INFO  testCases.TestCase - **** Ending Student Plan Detail *****
+15:09:11.650 [main] INFO  testCases.TestCase - **** starting Car Insurance Details  *****
+15:09:21.742 [main] INFO  testCases.TestCase - **** starting Error Message Validate  *****
+15:09:31.827 [main] INFO  testCases.TestCase - **** starting Correct Detail Validation  *****
+15:09:43.898 [main] INFO  testCases.TestCase - **** starting Health Insurance Plan  *****
+15:09:53.920 [main] INFO  testCases.TestCase - **** starting All Health Insurance  *****
+15:10:34.181 [main] INFO  testCases.TestCase - **** Ending All Health Insurance  *****
+15:11:53.317 [main] INFO  testCases.TestCase - Chrome browser opened successfully
+15:12:25.291 [main] INFO  testCases.TestCase - **** starting validatTravelInsuncePage  *****
+15:12:26.179 [main] INFO  testCases.TestCase - **** Ending validatTravelInsuncePage  *****
+15:12:26.224 [main] INFO  testCases.TestCase - **** Starting TravelDetails  *****
+15:12:26.224 [main] INFO  testCases.TestCase - Opening of Travel Insurance Page 
+15:12:51.057 [main] INFO  testCases.TestCase - Entering customer details.. 
+15:12:51.637 [main] INFO  testCases.TestCase - clicked on continue..
+15:12:54.345 [main] INFO  testCases.TestCase - **** ending TravelDetails  *****
+15:12:54.356 [main] INFO  testCases.TestCase - **** Starting Student Data Verify  *****
+15:12:54.715 [main] INFO  testCases.TestCase - Select Student...
+15:12:55.665 [main] INFO  testCases.TestCase - clicked on continue..
+15:12:56.072 [main] INFO  testCases.TestCase - Medical Condition..
+15:13:07.257 [main] INFO  testCases.TestCase - **** starting Data Sort  *****
+15:13:17.319 [main] INFO  testCases.TestCase - **** starting Student Plan Detail  *****
+15:13:27.353 [main] INFO  testCases.TestCase - **** starting Car Insurance Details  *****
+15:13:32.931 [main] INFO  testCases.TestCase - **** starting Error Message Validate  *****
+15:13:33.033 [main] INFO  testCases.TestCase - **** starting Correct Detail Validation  *****
+15:13:35.047 [main] INFO  testCases.TestCase - **** starting Health Insurance Plan  *****

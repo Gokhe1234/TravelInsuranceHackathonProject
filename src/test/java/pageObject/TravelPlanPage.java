@@ -10,8 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import utilities.ExcelUtility;
-
 public class TravelPlanPage extends BasePage {
 
 	public TravelPlanPage(WebDriver driver) {
@@ -58,17 +56,20 @@ public class TravelPlanPage extends BasePage {
 	@FindBy(xpath="//*[@id=\"root\"]/div/header/article/h1/a")
 	 WebElement logoClick;
 	
-	public void getStudentPlan() {
+	public void getStudentPlan() throws InterruptedException {
 		
 		js.executeScript("arguments[0].click();", studentPlan);
-		
+		Thread.sleep(2000);
 	}
-	public void getTraveller1() {
+	public void getTraveller1() throws InterruptedException {
+		Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", traveller1);
-		
+
 	}
-	public void getTraveller2() {
+	public void getTraveller2() throws InterruptedException {
+		Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", traveller2);
+
 		
 	}
 	
@@ -109,7 +110,7 @@ public class TravelPlanPage extends BasePage {
 		 System.out.println(company.get(j)+"---"+name.get(j)+"---"+prices.get(j));
 		 }
 		 
-		 ExcelUtility.excel();
+		 
 	}
 	
 
