@@ -11,8 +11,15 @@
       <class name="testCases.TestCase">
         <methods>
           <include name="openUrl"/>
+          <include name="allHealthInsurance"/>
           <include name="closeBowser"/>
+          <include name="dataSort"/>
+          <include name="HealthInsurancePlan"/>
+          <include name="CarInsurenceDetails"/>
           <include name="errorMessageValidate"/>
+          <include name="StudentPlanDetails"/>
+          <include name="correctDatailValidation"/>
+          <include name="studentDataVerify"/>
         </methods>
       </class> <!-- testCases.TestCase -->
     </classes>
